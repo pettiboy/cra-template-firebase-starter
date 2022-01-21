@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# CRA TypeScript Firebase Template
 
-## Available Scripts
+[![npm](https://img.shields.io/npm/v/cra-template-firebase-starter.svg)](https://npmjs.com/package/cra-template-firebase-starter)
+[![License MIT](https://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/pettiboy/cra-template-firebase-starter/main/LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/pettiboy/cra-template-firebase-starter/pulls)
 
-In the project directory, you can run:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
-### `npm start`
+Make sure you ⭐️ this [`repository`](https://github.com/pettiboy/cra-template-firebase-starter) if you find it helpful or interesting :)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Installation
 
-### `npm test`
+```bash
+npx create-react-app your-project-name --template typescript-firebase
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+OR
 
-### `npm run build`
+```bash
+yarn create react-app your-project-name --template typescript-firebase
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`npx` command installs the most recent stable version of CRA from npm.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`--template` parameter points to this template, note that `cra-template-` prefix is omitted.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Usage
 
-### `npm run eject`
+### SetUp firebase
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Go to https://console.firebase.google.com/
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Click on `Add project`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Follow steps and create project.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Click on web icon.
 
-## Learn More
+   - Register web app.
+   - You will get details for setting up `Firebase SDK`.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Add your config details in your `.env`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### SetUp SignIn with google
 
-### Code Splitting
+1. In your project console, click on `Authentication` and `Get Started`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. In `Sign-in method`, click on `Google`.
 
-### Analyzing the Bundle Size
+3. Toggle `Enable` and click on `Save`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### To create a new screen
 
-### Making a Progressive Web App
+1. Create a new component in `src/screens`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. In your `src/config/routes.ts`.
 
-### Advanced Configuration
+```js
+{
+    path: "/your-route",
+    component: YourScreenComponentName,
+    name: "Screen Name For Reference",
+    protected: false, // if user needs to be authenticated to access this screen
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### To Deploy on GitHub Pages
 
-### Deployment
+1. Add your domain (your-github-username.github.io) to the OAuth redirect domains list in the `Firebase console -> Auth section -> Sign in method tab`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. run
 
-### `npm run build` fails to minify
+```bash
+npm run deploy
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ✨ Featues
+
+### 1. Routing
+
+Routing setup using `react-router-dom`.
+
+- With easily implementable private routes (routes only authenticated users can use).
+
+- Easily add new screens.
+
+### 2. Authentication
+
+Authentication implemented implemented
+
+SignIn with Google implemented using `firebase` and `react-firebase-hooks`.
+
+### 3. Firebase Configured
+
+Firebase configured with `GoogleAuthProvider` implemented.
+
+### 4. Material UI
+
+Login Screen UI built using `@mui/material`.
+
+## 🔧 File Structure
+
+```
+├── src
+│   ├── components
+│   │   ├── auth
+│   │   |   ├── AuthChecker.js
+│   │   |   ├── AuthContainer.js
+│   │   |   ├── Logout.js
+│   │   ├── utils
+│   │   |   ├── Center.js
+│   ├── config
+│   │   ├── firebase.config.js
+│   │   ├── firebase.js
+│   │   ├── routes.js
+│   ├── screens
+│   │   ├── Login.js
+│   │   ├── Home.js
+```
