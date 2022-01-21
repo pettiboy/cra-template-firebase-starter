@@ -1,8 +1,42 @@
 {
-  "name": "cra-template-firebase-starter",
-  "version": "0.1.0",
   "homepage": "http://pettiboy.github.com/cra-template-firebase-starter",
-  "private": true,
+  "name": "cra-template-firebase-starter",
+  "version": "0.0.4",
+  "license": "MIT",
+  "author": "Hussain Pettiwala",
+  "engines": {
+    "node": ">=10"
+  },
+  "main": "template.json",
+  "description": "A quick start Create React App template with react-router-dom, material-ui, gh-pages and firebase. With google authentication, routing and deployment capabilities built in.",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "react-router",
+    "react-router-dom",
+    "javascript",
+    "firebase",
+    "authentication",
+    "SignIn with Google",
+    "mui",
+    "deploy",
+    "gh-pages",
+    "material-ui"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pettiboy/cra-template-firebase-starter",
+    "directory": "/"
+  },
+  "bugs": {
+    "url": "https://github.com/pettiboy/cra-template-firebase-starter/issues"
+  },
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
