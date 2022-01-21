@@ -1,6 +1,6 @@
 <div align="center">
 
-# Create React App Firebase Stater Template
+# Create React App Firebase Starter Template
 
 [![npm](https://img.shields.io/npm/v/cra-template-firebase-starter.svg)](https://npmjs.com/package/cra-template-firebase-starter)
 [![License MIT](https://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/pettiboy/cra-template-firebase-starter/main/LICENSE)
