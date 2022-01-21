@@ -1,13 +1,12 @@
 <div align="center">
 
-# CRA TypeScript Firebase Template
+# Create React App Firebase Stater Template
 
 [![npm](https://img.shields.io/npm/v/cra-template-firebase-starter.svg)](https://npmjs.com/package/cra-template-firebase-starter)
 [![License MIT](https://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/pettiboy/cra-template-firebase-starter/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/pettiboy/cra-template-firebase-starter/pulls)
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![NPM](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 
 Make sure you ⭐️ this [`repository`](https://github.com/pettiboy/cra-template-firebase-starter) if you find it helpful or interesting :)
@@ -17,13 +16,13 @@ Make sure you ⭐️ this [`repository`](https://github.com/pettiboy/cra-templat
 ## ✨ Installation
 
 ```bash
-npx create-react-app your-project-name --template typescript-firebase
+npx create-react-app your-project-name --template firebase-starter
 ```
 
 OR
 
 ```bash
-yarn create react-app your-project-name --template typescript-firebase
+yarn create react-app your-project-name --template firebase-starter
 ```
 
 `npx` command installs the most recent stable version of CRA from npm.
@@ -34,7 +33,7 @@ yarn create react-app your-project-name --template typescript-firebase
 
 ### SetUp firebase
 
-1. Go to https://console.firebase.google.com/
+1. Go to your [`Firebase Console`](https://console.firebase.google.com/)
 
 2. Click on `Add project`.
 
@@ -74,7 +73,9 @@ yarn create react-app your-project-name --template typescript-firebase
 
 1. Add your domain (your-github-username.github.io) to the OAuth redirect domains list in the `Firebase console -> Auth section -> Sign in method tab`.
 
-2. run
+2. update the `homepage` field in your `package.json` to the domain you are hosting on. (By default it is: `http://your-github-username.github.io/your-repo-name`)
+
+3. In your terminal
 
 ```bash
 npm run deploy
@@ -104,6 +105,10 @@ Firebase configured with `GoogleAuthProvider` implemented.
 
 Login Screen UI built using `@mui/material`.
 
+### 5. Deploy on Github Pages
+
+Deploying on GitHub pages powered by `gh-pages` and [`spa-github-pages`](https://github.com/rafgraph/spa-github-pages)
+
 ## 🔧 File Structure
 
 ```
@@ -123,3 +128,7 @@ Login Screen UI built using `@mui/material`.
 │   │   ├── Login.js
 │   │   ├── Home.js
 ```
+
+## 📝 Authors
+
+- Hussain Pettiwala ([@pettiboy](https://github.com/pettiboy))
