@@ -3,6 +3,7 @@
 # Create React App Firebase Starter Template
 
 [![npm](https://img.shields.io/npm/v/cra-template-firebase-starter.svg)](https://npmjs.com/package/cra-template-firebase-starter)
+[![npm](https://img.shields.io/npm/dy/cra-template-firebase-starter.svg)](https://npmjs.com/package/cra-template-firebase-starter)
 [![License MIT](https://img.shields.io/badge/license-MIT-orange.svg?style=flat)](https://raw.githubusercontent.com/pettiboy/cra-template-firebase-starter/main/LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/pettiboy/cra-template-firebase-starter/pulls)
 
@@ -128,3 +129,5 @@ Deploying on GitHub pages powered by `gh-pages` and [`spa-github-pages`](https:/
 ## 📝 Authors
 
 - Hussain Pettiwala ([@pettiboy](https://github.com/pettiboy))
+
+Special thanks to this well written [`blog`](https://grischuk.de/how-to-create-custom-create-react-app-cra-templates) and this [`repo`](https://github.com/alexandr-g/cra-template-typescript-redux) by [alexandr-g](https://github.com/alexandr-g).
