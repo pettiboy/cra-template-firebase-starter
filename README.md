@@ -26,6 +26,8 @@ OR
 yarn create react-app your-project-name --template firebase-starter
 ```
 
+`NOTE:` This `template` is also available in `TypeScript` [here](https://github.com/pettiboy/cra-template-typescript-firebase).
+
 ## ⚙️ Usage
 
 ### SetUp firebase
@@ -41,7 +43,7 @@ yarn create react-app your-project-name --template firebase-starter
    - Register web app.
    - You will get details for setting up `Firebase SDK`.
 
-4. Add your config details in your `.env`.
+4. Add the config details in your `.env` file (available in root of your project).
 
 ### SetUp SignIn with google
 
@@ -72,7 +74,14 @@ yarn create react-app your-project-name --template firebase-starter
 
 2. update the `homepage` field in your `package.json` to the domain you are hosting on. (By default it is: `http://your-github-username.github.io/your-repo-name`)
 
-3. In your terminal
+3. (Optional) Test production build locally: Update the `homepage` field to `/` and run:
+
+```bash
+npm i -g serve # install serve globally via npm
+npm run build-and-serve
+```
+
+4. Deploy to GitHub Pages run:
 
 ```bash
 npm run deploy
