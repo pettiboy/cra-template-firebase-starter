@@ -1,7 +1,7 @@
 {
   "homepage": "http://pettiboy.github.com/cra-template-firebase-starter",
   "name": "cra-template-firebase-starter",
-  "version": "0.0.5",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Hussain Pettiwala",
   "engines": {
